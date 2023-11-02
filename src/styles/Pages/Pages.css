@@ -1,0 +1,284 @@
+@layer components {
+    /* COMPONENTE DE FAQ */
+    /* contenedor principal */
+    .contenedor-faq{
+        @apply h-auto overflow-hidden
+    }
+    /* contenedor de informacion de importadora */
+    .seccion-importadora{
+        @apply pl-[35rem]
+    }
+    /* seccion dos de importadora */
+    .caja-importadora{
+        @apply dark:text-white text-black font-monserrat uppercase font-bold
+    }
+    /* Banner  */
+    .img{
+        @apply md:h-[16rem] lg:w-full lg:h-[28rem] h-[9rem]
+    }
+    /* container de la info de la empresa */
+    .company-info{
+       @apply flex flex-col items-center lg:relative lg:bottom-[21rem] lg:left-[32rem] 
+       text-black md:relative 
+    }
+    /* Informacion de la empresa */
+    .title-first{
+        @apply lg:text-2xl font-bangers lg:relative lg:right-[8.3rem] lg:bottom-9 text-sm
+        /* para tablet */
+        md:relative md:bottom-[14rem]  md:text-xl
+    }
+    /* titulo de vision y mision */
+    .title-second{
+        @apply lg:text-3xl font-bangers lg:w-[22rem] lg:space-y-8 lg:relative lg:right-[6.6rem] lg:bottom-6 
+        md:text-xl md:relative md:bottom-[14rem]  text-sm
+    }
+    /* Texto e info de la empresa */
+    .phrase-company{
+        @apply lg:text-xl lg:space-y-5 lg:w-[35rem] lg:relative lg:top-[0rem]  lg:opacity-90 lg:px-4 lg:py-4 
+        md:relative md:bottom-[14rem] md:w-[31rem] md:font-semibold md:bg-white md:py-2 md:px-2 md:text-lg
+        md:rounded-lg  dark:text-black w-[23rem] text-xs bg-white px-2 py-2 rounded-md 
+    }
+    .paragraph-content{
+        @apply lg:relative lg:left-[5rem] lg:bottom-[44rem]
+        md:relative md:bottom-[20rem] md:right-[26rem]
+    }
+    .paragraph{
+        @apply lg:text-xl lg:w-[40rem] text-center lg:space-y-5 space-x-8
+        md:text-lg md:w-[32rem] 
+    }
+    /* logo de la estrella */
+    .base-imagen{
+        @apply lg:relative lg:bottom-[14rem] lg:left-[1rem] opacity-50 
+        md:relative md:right-[29rem] md:bottom-[12rem]
+    }
+    .img-base{
+        @apply 
+    }
+    /* contenedor del titulo de importadora */
+    .title-import{
+        @apply lg:relative lg:bottom-[47rem] lg:left-[12rem] text-2xl 
+        md:text-xl md:relative md:bottom-[22rem] md:right-[22rem] md:w-[32rem]
+    }
+    /* parrafo de importadora */
+    .main-faq{
+        @apply container mx-auto flex items-center flex-wrap my-16
+    }
+    .main-content{
+        @apply dark:text-white text-black
+    }
+    .mision{
+        @apply mb-6 lg:border-b pb-8 lg:border-gray-700 lg:flex lg:items-center gap-8 justify-around 
+        lg:relative lg:left-[3rem] lg:bottom-[29rem] lg:h-[40rem] font-bold font-monserrat 
+        md:relative md:bottom-[15rem] md:left-[3rem] md:h-[32rem] 
+    }
+    .mision-title{
+        @apply mb-6 uppercase lg:text-2xl md:text-xl 
+    }
+    .mision-conten{
+        @apply md:relative md:left-10 
+    }
+    .mision-paragraph{
+        @apply text-2xl w-[34rem] space-y-8 lg:relative  space-x-8 md:relative brightness-200 
+    }
+    .mision-card{
+        @apply pl-28 
+    }
+    .mision-img{
+        @apply lg:w-[40rem] lg:h-[40rem] lg:opacity-100 object-cover rounded-lg 
+        lg:relative lg:top-[0rem] lg:left-[4rem] saturate-200
+        md:relative md:bottom-[16rem] md:right-[6rem] md:opacity-30 md:h-[22rem] md:w-[42rem] 
+    }
+    .vision{
+        @apply mb-6 lg:border-b pb-8 lg:border-gray-700  lg:flex lg:items-center gap-8 justify-around 
+        lg:relative lg:left-[3rem] lg:bottom-[27rem] font-bold font-monserrat md:h-[31rem] lg:h-[40rem]
+    }
+    .vision-img{
+        @apply lg:w-[40rem] lg:h-[40rem] object-cover rounded-lg 
+        md:h-[22rem] md:w-[40rem] md:opacity-30 lg:saturate-200 lg:opacity-100 lg:relative lg:top-[0rem] lg:right-[12rem]
+         md:relative md:bottom-[16rem] md:left-[3.5rem]
+    }
+    .vision-card{
+        @apply pl-20
+    }
+    .vision-title{
+        @apply mb-6 uppercase lg:text-2xl  lg:relative lg:left-[1.5rem] lg:top-[3rem]
+        md:relative md:left-[1.3rem] md:bottom-[34rem] md:text-xl
+    }
+    .vision-paragraph{
+        @apply lg:text-2xl lg:w-[34rem] space-y-8  space-x-8 lg:relative lg:top-[3rem]
+        md:w-[34rem] md:text-xl md:relative md:bottom-[35rem] md:left-6
+    }
+    /* COMPONENTE DE LOGIN */
+    .contenedor{
+        @apply dark:bg-gray-900 border-4 border-black
+    }
+
+    .capa-superior{
+        @apply flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen 
+        lg:py-0
+    }
+
+    .capa-media{
+        @apply w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700
+    }
+
+    .capa-interna{
+        @apply p-6 space-y-4 md:space-y-6 sm:p-8
+    }
+    /* Logo */
+    .seccion-logo{
+        @apply flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white
+        lg:relative lg:left-[6rem] md:relative md:left-[6rem]
+    }
+    /* titulo de login */
+    .login-title{
+        @apply text-xl font-advent font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white
+
+    }
+    /* Titulo de usuario */
+    .user-title{
+        @apply block mb-2 text-sm font-bangers font-medium text-gray-900 dark:text-white
+    }
+    /* input del usuario */
+    .user-input{
+        @apply bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600
+        focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
+        dark:focus:border-blue-500
+    }
+
+    .password-title{
+        @apply block mb-2 text-sm font-bangers font-medium text-gray-900 dark:text-white
+    }
+
+    .password-input{
+        @apply bg-gray-50 border border-gray-300 
+        text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 
+        dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    }
+
+    .input-check{
+        @apply w-4 h-4 border border-gray-300 rounded 
+        bg-gray-50 focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 
+        dark:ring-offset-gray-800
+    }
+
+    .title-check{
+        @apply text-gray-500 font-bangers dark:text-gray-300
+    }
+
+    .forgot-password{
+        @apply text-sm font-medium text-blue-600 font-bangers hover:underline dark:text-blue-500
+    }
+
+    .botonsubmit-log{
+        @apply px-7 py-3 rounded-lg font-bold bg-blue-500 text-white  hover:bg-green-400 
+        transform hover:scale-105 transition duration-300 lg:w-[400px] lg:relative  block md:w-[300px] 
+        md:relative 
+    }
+
+    .register-text{
+        @apply text-sm font-light  text-gray-500 dark:text-gray-400
+    }
+
+    .registre-link{
+        @apply font-medium text-lg relative left-12 text-gray-600 hover:underline hover:text-blue-500 dark:text-blue-500
+    }
+    /* COMPONENTE DE REGISTER */
+    .form-register{
+        @apply lg:min-w-[700px] lg:mt-[50px] bg-white rounded p-[20px] shadow-md shadow-slate-950
+    }
+    /* titulo del formulario */
+    .title-header{
+        @apply font-monserrat uppercase font-bold text-xl text-center relative top-[5rem]
+    }
+    /* contenedor de la animacion del circulo */
+    .contenedor-circule{
+        @apply lg:relative lg:left-[29.7rem] lg:top-[3rem] md:relative md:left-[28rem] md:top-12 flex h-4 w-4 animate-spin
+    }
+    /* circulo capa 1# */
+    .circule-first{
+        @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-900 opacity-75 
+    }
+    /* circulo capa 2# */
+    .circule-second{
+        @apply relative inline-flex rounded-full h-3 w-3 bg-slate-400
+    }
+    /* Logo de star del formulario */
+    .img-logo{
+        @apply lg:relative lg:left-[13rem] lg:top-12 md:relative md:left-[12rem] md:top-9 w-[13rem] h-[13rem] animate-pulse
+    }
+    /* campo del nombre titulo */
+    .name-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo del nombre input */
+    .name-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo del apellido titulo */
+    .lastname-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo del apellido input */
+    .lastname-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo de telefono titulo*/
+    .number-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo de telefono input */
+    .number-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo de la cuidad */
+    .city-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo de la cuidad input */
+    .city-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo de la direccion titulo*/
+    .address-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo de la direccion input */
+    .address-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* camp de la fecha de nacimiento titulo*/
+    .data-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo de la fecha de nacimiento input */
+    .data-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo de correo electronico */
+    .email-title{
+        @apply block font-medium text-[14px] mb-1 text-[#1f1f1f]
+    }
+    /* campo de correo input */
+    .email-input{
+        @apply font-monserrat w-full rounded border-2 border-[#e2e2e2] text-[1rem] p-2 mb-1 text-[#1f1f1f]
+    }
+    /* campo de tratamiento de datos titulo */
+    .datatreatment-titulo{
+        @apply text-gray-500 font-bangers dark:text-gray-300
+    }
+    /* campo de tratamiento de datos checkbox */
+    .datatreatment-input{
+        @apply w-4 h-4 border border-gray-300 rounded 
+        bg-gray-50 focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 
+        dark:ring-offset-gray-800
+    }
+    /* campo de boton de registro */
+    .boton-submit{
+        @apply px-7 py-3 rounded-lg font-bold bg-blue-500 text-white  lg:hover:bg-green-400  md:hover:bg-green-400
+        transform hover:scale-110 transition duration-300  block w-[600px] p-2 lg:relative lg:left-8 md:relative md:right-[.1rem]
+    }
+    /* COMPONENTE DE DISTRIBUIDORES */
+    
+
+}

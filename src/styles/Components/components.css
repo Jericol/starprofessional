@@ -1,0 +1,44 @@
+@layer components {
+    /* componente de contacbar */
+    .container-static {
+        @apply  hidden items-center justify-evenly border-b dark:border-b dark:pl-8
+         md:w-[70rem] md:relative md:right-9 lg:flex lg:justify-around lg:w-screen lg:h-[5rem] 
+    }
+    .container-static-md {
+        @apply md:box-border 
+    }
+    .container-static-sm{
+        @apply flex md:hidden lg:flex text-sm
+    }
+    .btn-container-static {
+        @apply bg-black dark:bg-[#2e2b41] border-black dark:border-slate-200
+    }
+    .lg-display{
+        @apply md:hidden lg:flex
+    }
+    .md-display {
+        @apply h-[5rem] lg:hidden md:flex hidden
+    }
+    .sm-display {
+        @apply flex flex-col items-center gap-2 -space-y-4 md:hidden
+    }
+    .section-primary{
+        @apply md:relative md:top-2 relative bottom-0 
+    }
+    .email-info{
+        @apply dark:text-white text-white lg:relative lg:bottom-5 lg:left-8 font-advent lg:text-lg 
+        md:relative md:text-base 
+    }
+    .pbx-info{
+        @apply dark:text-white text-white lg:relative lg:bottom-5 lg:left-8 font-advent text-sm uppercase space-x-2
+        md:text-base 
+    }
+    .icono-bar-one{
+        @apply text-2xl lg:relative lg:top-1  
+    }
+    .send-free{
+        @apply dark:text-white text-white lg:relative lg:bottom-5 lg:left-8 font-advent lg:text-lg 
+         
+    }
+
+}
