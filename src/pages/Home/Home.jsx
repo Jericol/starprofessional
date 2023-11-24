@@ -68,12 +68,12 @@ function Home() {
                             </span>
                         </div>
                     </div>
-                    <div className=' '>
+                    <div className='mb-[5rem] '>
                         <Group />
                     </div>
                 </header>
                 {/* productos */}
-                <div className=' '>
+                <div className='mb-[8rem] '>
                     <CardNew />
                 </div>
                 <div className="w-full bg-gray-400 dark:bg-[#393550] h-auto relative bottom-[4rem] mb-[4rem] rounded-md">

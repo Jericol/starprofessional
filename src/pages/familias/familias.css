@@ -1,0 +1,14 @@
+.card  {
+    width: 200px;
+    height: 200px;
+    margin: 0, 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide {
+    margin: 0, 10px;
+}

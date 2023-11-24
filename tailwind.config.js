@@ -15,7 +15,8 @@ export default {
         shadows: [ 'Shadows Into Light' ], 
         righteous: [ 'Righteous' ], 
         advent: [ 'Righteous' ],
-        bangers: [ 'Righteous' ]
+        bangers: [ 'Righteous' ],
+        poppins: [ 'Poppins' ],
 
       },
       colors: {

@@ -1,0 +1,12 @@
+.group-box > div{
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    transition: all ease-in-out ;
+    cursor: pointer;
+    border-radius: 1rem !important;
+ }
+
+ .card-box {
+    margin: 0 auto;
+ }

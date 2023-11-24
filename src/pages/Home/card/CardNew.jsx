@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Pagination from '../../../components/Pagination/Pagination';
 import { useSelector } from 'react-redux';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './cardnew.css'
 
 
 
@@ -21,79 +25,61 @@ function CardNew({ allProducts, setAllProducts, countProducts, setCountProducts,
 
     const addProducts = (product) => {
         setAllProducts([product])
-        
+
     }
-    // peticionde prueba de get 
-    // const fecthApi = async () => {
-    //     const res = await fetch("http://190.60.237.163/articulos/?buscar=001&size=20")
-    //     const data = await res.json();
-    //     if (data === 200) {
-    //         console.log("peticion realizada con exito")
-    //     } else {
-    //        console.log("peticion rechazada por querys and") 
-    //     }
-    // }
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        rows: 3,
+        slidesPerRow: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                },
+            },
+        ],
+    };
 
 
     return (
-        <div className=''>
-            {/* card para pc */}
-            <div className='lg:pl-5 lg:grid grid-cols-1 lg:grid-cols-4'>
-                <div className='lg:col-span-full'>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-3 m-5 p-5'>
-                        {
-                            productList.map((product, i) => (
+        <div className='' >
 
-                                <div key={i} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                    <img
-                                        className="object-cover w-full rounded-t-lg h-[19rem] md:h-auto md:w-28 md:rounded-none md:rounded-l-lg"
-                                        src={product.Foto}
-                                        alt=""
-                                        onClick={() => navigate(`/productsDetail/${product?.Codigo}`)}
-                                    />
-                                    <div className="flex flex-col justify-between p-4 leading-normal">
-                                        <h5 className="mb-2 text-xl lowercase tracking-tight text-gray-900 dark:text-white">
-                                            {product.Descripcion}
-                                        </h5>
-                                        <div className='flex items-center justify-between'>
-                                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                                ${product.Precio}
-                                            </p>
-                                            <span className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                                                Ref: {product.Codigo}
-                                            </span>
-                                        </div>
-                                        <div className='flex flex-col '>
-                                            <div className='flex items-center justify-around gap-4 text-black dark:text-white border border-slate-400 px-2 py-1 rounded-lg'>
-                                                <p className='text-sm'>2und</p>
-                                                <p className='text-sm'>6und</p>
-                                                <p className='text-sm'>12und</p>
-                                            </div>
-                                            <div className='flex items-center justify-around gap-4 mb-4'>
-                                                <span className='text-sm'>{product.Precio3}</span>
-                                                <span className='text-sm'>{product.Precio4}</span>
-                                                <span className='text-sm'>{product.Precio5}</span>
-                                            </div>
-                                        </div>
-                                        <button onClick={() => addProducts(product)}
-                                            className=" bg-blue-200 text-blue-800 focus:outline-none font-medium 
-                                            rounded-lg text-sm px-2 py-2.5 text-center  w-full mb-4"
-                                        >
-                                            Añadir al carrito
-                                        </button>
-                                    </div>
-                                </div>
-                            )).slice(firsIndex, lastIndex)
-                        }
-                        <Pagination
-                            productsPage={productsPage}
-                            currentPage={currentPage}
-                            setCurrentPage={setCurrentPage}
-                            totalProduct={totalProduct}
+            <Slider {...settings} classNameName='group-box'>
+                {productList.map((product, index) => (
+
+                    <a key={index} href="#" className="flex flex-col items-center p-1 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" 
+                             src={product.Foto}
+                             alt=""
                         />
-                    </div>
-                </div>
-            </div>    
+                            <div className="flex flex-col justify-between p-4 leading-normal">
+                                <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-white">
+                                    {product.Descripcion}
+                                </h5>
+                                <p className="mb-3 font-normal text-green-500 dark:text-gray-400">
+                                    $ {product.Precio}
+                                </p>
+                            </div>
+                    </a>
+
+                ))}
+            </Slider >
         </div >
     )
 }

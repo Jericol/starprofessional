@@ -84,15 +84,8 @@ function ProductNews({ allProducts, setAllProducts, countProducts, setCountProdu
                             </div>
                         </div>
                         {/* categorias movil */}
-                        <div className='mb-8 md:flex md:items-center md:flex-col md:justify-between md:relative '>
-                            <Group
-                                showMenu={showMenu}
-                                setShowMenu={setShowMenu}
-                                itemPage={itemPage}
-                                setItemPage={setItemPage}
-                                nextPage={nextPage}
-                                setNextPage={setNextPage}
-                            />
+                        <div className=''>
+                           
                             {/* buscador */}
                             <div className='relative left-4 hidden md:relative md:top-1 '>
                                 <SearchBar />
@@ -103,10 +96,14 @@ function ProductNews({ allProducts, setAllProducts, countProducts, setCountProdu
                             <img src="https://i.ibb.co/Y0YrmCD/BANNER-PRODUCTOS.jpg" alt="banner-productos" className='rounded-lg' />
                         </span>
                     </div>
+                    
+                </div>
+                <div className='mb-[4rem]'>
+                    <Group />
                 </div>
                 {/* Articulos */}
                 {/* card para pc */}
-                <div>
+                <div className='mb-[6rem]'>
                     <CardNew />
                 </div>
                 <div className='w-full bg-slate-400 dark:bg-[#312e44] h-auto relative bottom-10 rounded-md '>
