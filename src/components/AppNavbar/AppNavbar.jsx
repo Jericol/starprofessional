@@ -30,7 +30,7 @@ function AppNavbar() {
     const dispatch = useDispatch();
 
 
-    console.log("hola");
+    console.log("holaaaaaaaa");
 
     const logout = () => {
         localStorage.setItem("usuario", "")
