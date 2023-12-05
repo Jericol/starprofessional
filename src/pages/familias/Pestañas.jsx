@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import CardNew from '../Home/card/CardNew';
 import axios from 'axios';
 
 function Pestañas() {

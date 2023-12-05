@@ -5,12 +5,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Category from '../../components/Categorias/Category';
-import CardNew from '../Home/card/CardNew'
+
 import { useForm } from 'react-hook-form';
 import Group from '../../components/Categorias/Grupos/Group';
 // import ProductNews from '../../pages/productNews/ProductNews';
 import DistribuidoresF from '../../../public/img/BANNER-DISTRIBUIDORES.webp'
 import LinkSeccion from '../../components/Botonup/LinkSeccion';
+import ProductCard from '../../components/productCard/ProductCard';
 
 
 
@@ -18,8 +19,8 @@ import LinkSeccion from '../../components/Botonup/LinkSeccion';
 function Home() {
 
     const dispatch = useDispatch();
-    // const productList = useSelector(state => state.product);
-    // const navigate = useNavigate();
+    const productList = useSelector(state => state.product);
+    const navigate = useNavigate();
     const [categories, setCategories] = useState([]);
 
     const { register, handleSubmit } = useForm();
@@ -73,8 +74,10 @@ function Home() {
                     </div>
                 </header>
                 {/* productos */}
-                <div className='mb-[8rem] '>
-                    <CardNew />
+                <div className='mb-[8rem] flex flex-wrap justify-center '>
+                    {productList.map((product, index)=> (
+                        <ProductCard key={index} product={product}/>
+                    ))}
                 </div>
                 <div className="w-full bg-gray-400 dark:bg-[#393550] h-auto relative bottom-[4rem] mb-[4rem] rounded-md">
                     <div className="flex items-center justify-center gap-5 md:gap-[12rem] dark:text-white py-8">
