@@ -27,7 +27,10 @@ function AppNavbar() {
     // estado para busqueda de productos
     const [search, setSearch] = useState(false);
     const navigate = useNavigate();
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+
+
+    console.log("hola");
 
     const logout = () => {
         localStorage.setItem("usuario", "")
