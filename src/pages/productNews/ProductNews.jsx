@@ -13,7 +13,7 @@ import Group from '../../components/Categorias/Grupos/Group';
 import Pagination from '../../components/Pagination/Pagination';
 import { data } from 'autoprefixer';
 import { addCartThunk } from '../../store/slice/cart.slice';
-import CardNew from '../Home/card/CardNew';
+
 
 function ProductNews({ allProducts, setAllProducts, countProducts, setCountProducts, total, setTotal }) {
 
@@ -104,7 +104,7 @@ function ProductNews({ allProducts, setAllProducts, countProducts, setCountProdu
                 {/* Articulos */}
                 {/* card para pc */}
                 <div className='mb-[6rem]'>
-                    <CardNew />
+                    
                 </div>
                 <div className='w-full bg-slate-400 dark:bg-[#312e44] h-auto relative bottom-10 rounded-md '>
                     <div className='flex items-center justify-center gap-12 dark:text-white py-8'>
